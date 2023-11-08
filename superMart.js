@@ -72,6 +72,13 @@ app.get("/", async (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
  
+app.get("/cadastropessoa", async(req, res)=>{
+  res.sendFile(__dirname + "/cadastropessoa.html")
+})
+
+app.get("/cadastroprodutomercado", async(req, res)=>{
+  res.sendFile(__dirname + "/cadastroprodutomercado.html")
+})
  
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
